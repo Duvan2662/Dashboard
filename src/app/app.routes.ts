@@ -11,11 +11,6 @@ export const routes: Routes = [
         loadComponent:() => import('./dashboard/pages/change-detection/change-detection.component').then(c => c.ChangeDetectionComponent),
       },
       {
-        path:'change-detection',
-        title:'Change Detection',
-        loadComponent:() => import('./dashboard/pages/change-detection/change-detection.component').then(c => c.ChangeDetectionComponent),
-      },
-      {
         path:'control-flow',
         title:'Control Flow',
         loadComponent:() => import('./dashboard/pages/control-flow/control-flow.component').then(c => c.ControlFlowComponent),

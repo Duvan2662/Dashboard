@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { booleanAttribute, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-title',
@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './title.component.css'
 })
 export class TitleComponent {
+  @Input({ required:true }) title!: string;
+  @Input({transform:booleanAttribute}) withShadow: boolean = false;
+
 
 }

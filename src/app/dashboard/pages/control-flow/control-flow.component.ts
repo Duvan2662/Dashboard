@@ -15,6 +15,10 @@ export class ControlFlowComponent {
 
   public showContent = signal(false);
   public grade = signal<Grade>('A');
+  public frameworks = signal(['Angular','React','Vue','Svelt','Qwik']);
+  public frameworks2 = signal([]);
+
+
 
 
 

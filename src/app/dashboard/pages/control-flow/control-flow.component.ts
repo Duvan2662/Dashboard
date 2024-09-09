@@ -1,5 +1,9 @@
 import { Component, signal } from '@angular/core';
 
+
+type Grade = 'A'|'B'|'C'
+
+
 @Component({
   selector: 'app-control-flow',
   standalone: true,
@@ -10,6 +14,8 @@ import { Component, signal } from '@angular/core';
 export class ControlFlowComponent {
 
   public showContent = signal(false);
+  public grade = signal<Grade>('A');
+
 
 
 

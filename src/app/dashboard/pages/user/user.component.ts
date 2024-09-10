@@ -1,5 +1,4 @@
-import { Component, inject } from '@angular/core';
-import { UsersService } from '@services/users.service';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-user',
@@ -9,6 +8,4 @@ import { UsersService } from '@services/users.service';
   styleUrl: './user.component.css'
 })
 export class UserComponent {
-  public usersService = inject(UsersService);
-
 }
